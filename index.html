@@ -5,6 +5,8 @@
         <title>proj - html - vuejs</title>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono&display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="style.css">
     </head>
@@ -17,11 +19,11 @@
                     <div class="header-boxes">
 
                         <div class="header-box" v-for="box in header_boxes">
-                            <div class="header-link" v-if="box.type == 'link'">
+                            <a href="" class="header-link" v-if="box.type == 'link'">
                                 <i :class="box.icon_class"></i>
                                 <h3 class="">{{box.h3}}</h3>
                                 <p class="">{{box.p}}</p>
-                            </div>
+                            </a>
                             <div class="header-logo" v-if="box.type == 'logo'">
                                 <h1>{{box.h1_1}}</h1>
                                 <h1>{{box.h1_2}}</h1>

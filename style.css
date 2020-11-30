@@ -28,6 +28,8 @@ header .container{
     width: 80%;
 }
 
+
+
 .header-boxes{
     display: flex;
     justify-content: space-between;
@@ -57,9 +59,15 @@ header .container{
 .header-box:first-of-type i{
     color: #6c6c6c;
 }
+.header-box:first-of-type i.active{
+    color: #33a7b9;
+}
 
 .header-box:last-of-type i{
     color: #6c6c6c;
+}
+.header-box:last-of-type i.active{
+    color: #33a7b9;
 }
 
 .header-link h3{
@@ -67,6 +75,9 @@ header .container{
     letter-spacing: 2px;
     color: #6c6c6c;
     font-size: 15px;
+}
+.header-link h3.active{
+    color: #33a7b9;
 }
 
 .header-link p{
@@ -161,13 +172,13 @@ header .container{
 }
 
 .demos i{
-    color: #bcafa1;
+    color: #33475b;
 }
 
 .price span{
     font-size: 18px;
     font-weight:bolder;
-    color: #126622;
+    color: #65bc7b;
 }
 
 /* __________SEZIONE_2__________ */
@@ -188,7 +199,7 @@ header .container{
     text-align: center;
 }
 .flex-box2 h1{
-    color: #6b6a69;
+    color: #6f727b;
     font-size: 50px;
     font-weight: lighter;
 }
@@ -213,7 +224,7 @@ header .container{
    -ms-transform: scaleX(-1);
 }
 .flex-box2 p{
-    color: #6b6a69;
+    color: #6f727b;
     margin-bottom: 25px;
 }
 
@@ -256,7 +267,7 @@ header .container{
     padding: 5px 0;
 }
 .flex-box3 p{
-    color: #6b6a69;
+    color: #6f727b;
     font-size: 14px;
 }
 .flex-box3 .internal2{

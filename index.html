@@ -19,10 +19,10 @@
                 <div class="container">
                     <div class="header-boxes">
 
-                        <div class="header-box" v-for="box in header_boxes">
-                            <a href="" class="header-link" v-if="box.type == 'link'">
-                                <i class="icon-color1" :class="box.icon_class"></i>
-                                <h3 class="">{{box.h3}}</h3>
+                        <div class="header-box" v-for="(box, index) in header_boxes">
+                            <a href="#" @click="colorActive(index)" class="header-link" v-if="box.type == 'link'">
+                                <i :class="[box.active == true ? 'active' : '', box.icon_class]" class="icon-color1"></i>
+                                <h3 :class="box.active == true ? 'active' : ''" class="">{{box.h3}}</h3>
                                 <p class="">{{box.p}}</p>
                             </a>
                             <div class="header-logo" v-if="box.type == 'logo'">

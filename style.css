@@ -81,13 +81,6 @@ header .container{
     font-size: 18px;
 }
 .header-logo h1{
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 0 5px;
-    color: #bcafa1;
-}
-.header-logo h1:last-of-type{
-    font-weight: lighter;
 }
 
 /* __________SEZIONE_1__________ */

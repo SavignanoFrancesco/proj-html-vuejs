@@ -25,8 +25,7 @@ var app = new Vue({
             },
             {
                 type: "logo",
-                h1_1: "Avada",
-                h1_2: "SPA",
+                img_src: "img/avada-spa-logo-new.png",
 
             },
             {

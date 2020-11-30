@@ -76,15 +76,13 @@ var app = new Vue({
     methods: {
         //toggle per definire quale voce della navbar è attiva
         colorActive(index){
+            //al click tutte le proprietà active assumono valore false
             for (var i = 0; i < this.header_boxes.length; i++) {
                 this.header_boxes[i].active = false;
             }
-            if (this.header_boxes[index].active == false) {
-                this.header_boxes[index].active = true;
-            }else{
-                this.header_boxes[index].active = false;
-            }
 
+            // la voce del menu cliccata diventa attiva
+            this.header_boxes[index].active = true;
         }
     },
     mounted(){

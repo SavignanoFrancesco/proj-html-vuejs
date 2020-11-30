@@ -4,19 +4,19 @@ var app = new Vue({
         header_boxes:[
             {
                 type: "link",
-                icon_class: "icon-1 fas fa-home",
+                icon_class: "fas fa-home",
                 h3: "",
                 p: "",
             },
             {
                 type: "link",
-                icon_class: "icon-2 fab fa-pagelines",
+                icon_class: "fab fa-pagelines",
                 h3: "Treatments",
                 p: "Face & Body",
             },
             {
                 type: "link",
-                icon_class: "icon-2 fas fa-male",
+                icon_class: "fas fa-male",
                 h3: "About",
                 p: "Our Team",
             },
@@ -26,19 +26,19 @@ var app = new Vue({
             },
             {
                 type: "link",
-                icon_class: "icon-2 fas fa-heart",
+                icon_class: "fas fa-heart",
                 h3: "Journal",
                 p: "Tips & Tricks",
             },
             {
                 type: "link",
-                icon_class: "icon-2 fas fa-bookmark",
+                icon_class: "fas fa-bookmark",
                 h3: "Book now",
                 p: "Special offers",
             },
             {
                 type: "link",
-                icon_class: "icon-1 fas fa-plus",
+                icon_class: "fas fa-plus",
                 h3: "",
                 p: "",
             },
@@ -46,23 +46,23 @@ var app = new Vue({
         ],
         flex_box3: [
             {
-                icon_class: "icon-2 fas fa-sign-language",
+                icon_class: "fas fa-sign-language",
                 p: "Massages",
             },
             {
-                icon_class: "icon-2 far fa-smile",
+                icon_class: "far fa-smile",
                 p: "Therapy",
             },
             {
-                icon_class: "icon-2 fas fa-heart",
+                icon_class: "fas fa-heart",
                 p: "Relaxing",
             },
             {
-                icon_class: "icon-2 far fa-moon",
+                icon_class: "far fa-moon",
                 p: "Meditation",
             },
             {
-                icon_class: "icon-2 far fa-snowflake",
+                icon_class: "far fa-snowflake",
                 p: "Natural Beauty",
             },
         ],

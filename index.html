@@ -21,7 +21,7 @@
 
                         <div class="header-box" v-for="box in header_boxes">
                             <a href="" class="header-link" v-if="box.type == 'link'">
-                                <i :class="box.icon_class"></i>
+                                <i class="icon-color1" :class="box.icon_class"></i>
                                 <h3 class="">{{box.h3}}</h3>
                                 <p class="">{{box.p}}</p>
                             </a>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="flex-box-absolute">
                     <a href="" class="demos">
-                        <i class="fas fa-copy"></i>
+                        <i class="icon-color1 fas fa-copy"></i>
                         <span>Demos</span>
                     </a>
                     <a href="" class="onsale">
@@ -63,7 +63,7 @@
             <section class="section-2">
                 <div class="flex-box2">
                     <h1>Luxury Spa Experiences</h1>
-                    <i class="icon-2 fab fa-envira"></i>
+                    <i class="icon-color1 fab fa-envira"></i>
                     <h2>Morbi pharetra, quam id consequat imperdiet, lectus est tincidunt massa, eu posuere leo nibh non fermentum</h2>
                     <div class="line">
 
@@ -76,11 +76,14 @@
                 <div class="flex-box3">
 
                     <div v-for="(item,index) in flex_box3" :class="index % 2 == 0 ? 'internal1' : 'internal2'">
-                        <i :class="item.icon_class"></i>
+                        <i class="icon-color1" :class="item.icon_class"></i>
                         <p>{{item.p}}</p>
                     </div>
 
                 </div>
+
+            </section>
+            <section class="section-3">
 
             </section>
 

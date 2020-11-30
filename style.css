@@ -48,21 +48,18 @@ header .container{
     flex-direction: column;
     align-items: center;
 }
-.icon-1.fas.fa-home{
-    color:#6cd6e1;
+
+.icon-color1{
+    color: #bcafa1;
+    padding: 5px;
 }
 
-.header-link .icon-1{
+.header-box:first-of-type i{
     color: #6c6c6c;
 }
 
-.icon-2{
-    color: #bcafa1;
-}
-
-.header-link i{
-    color: #bcafa1;
-    padding: 5px;
+.header-box:last-of-type i{
+    color: #6c6c6c;
 }
 
 .header-link h3{
@@ -133,7 +130,7 @@ header .container{
     border-radius: 20px;
 }
 .btn1:hover{
-    background-color: #6cd6e1;
+    background-color: #33a7b9;
 }
 
 .flex-box-absolute{
@@ -180,6 +177,7 @@ header .container{
     align-items: center;
     justify-content: center;
     margin: 100px 0;
+
 }
 
 .flex-box2{
@@ -229,8 +227,8 @@ header .container{
     border-radius: 20px;
 }
 .btn2:hover{
-    border: 2px solid  #6cd6e1;
-    color: #6cd6e1;
+    border: 2px solid  #33a7b9;
+    color: #33a7b9;
 }
 
 .section-2 .btn2{
@@ -266,4 +264,10 @@ header .container{
     position: relative;
     top: 20px;
     /* border: 1px solid black; */
+}
+
+/* __________SEZIONE_3__________ */
+.section-3{
+    height: 400px;
+    background: whitesmoke;
 }

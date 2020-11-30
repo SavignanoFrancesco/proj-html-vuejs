@@ -127,8 +127,9 @@ header .container{
     text-transform: uppercase;
     background-color: #bcafa1;
     color: whitesmoke;
-    font-size: 18px;
-    padding: 10px 16px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px 16px;
     border-radius: 20px;
 }
 .btn1:hover{
@@ -178,7 +179,7 @@ header .container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    margin: 100px 0;
 }
 
 .flex-box2{
@@ -223,7 +224,8 @@ header .container{
     border: 2px solid  #bcafa1;
     color: #bcafa1;
     font-size: 16px;
-    padding: 10px 16px;
+    letter-spacing: 1px;
+    padding: 12px 16px;
     border-radius: 20px;
 }
 .btn2:hover{
@@ -231,12 +233,17 @@ header .container{
     color: #6cd6e1;
 }
 
+.section-2 .btn2{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
 .flex-box3{
     /* border: 1px solid black; */
     width: 70%;
     display: flex;
     justify-content: space-around;
-    margin: 30px 0;
+    margin: 40px 0;
     height: 100px;
     padding-left: 33px;
 }
@@ -248,6 +255,7 @@ header .container{
 }
 .flex-box3 i{
     font-size: 40px;
+    padding: 5px 0;
 }
 .flex-box3 p{
     color: #6b6a69;

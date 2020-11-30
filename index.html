@@ -59,6 +59,31 @@
                 </div>
             </section>
 
+            <!-- __________SECONDA_SEZIONE__________ -->
+            <section class="section-2">
+                <div class="flex-box2">
+                    <h1>Luxury Spa Experiences</h1>
+                    <i class="icon-2 fab fa-envira"></i>
+                    <h2>Morbi pharetra, quam id consequat imperdiet, lectus est tincidunt massa, eu posuere leo nibh non fermentum</h2>
+                    <div class="line">
+
+                    </div>
+                    <p>Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.</p>
+                    <a href="" class="btn2">
+                        <span>Our approach</span>
+                    </a>
+                </div>
+                <div class="flex-box3">
+
+                    <div v-for="(item,index) in flex_box3" :class="index % 2 == 0 ? 'internal1' : 'internal2'">
+                        <i :class="item.icon_class"></i>
+                        <p>{{item.p}}</p>
+                    </div>
+
+                </div>
+
+            </section>
+
         </div>
 
 

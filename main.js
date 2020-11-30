@@ -44,6 +44,28 @@ var app = new Vue({
             },
 
         ],
+        flex_box3: [
+            {
+                icon_class: "icon-2 fas fa-sign-language",
+                p: "Massages",
+            },
+            {
+                icon_class: "icon-2 far fa-smile",
+                p: "Therapy",
+            },
+            {
+                icon_class: "icon-2 fas fa-heart",
+                p: "Relaxing",
+            },
+            {
+                icon_class: "icon-2 far fa-moon",
+                p: "Meditation",
+            },
+            {
+                icon_class: "icon-2 far fa-snowflake",
+                p: "Natural Beauty",
+            },
+        ],
     },
     methods: {
 

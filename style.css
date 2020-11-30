@@ -128,7 +128,7 @@ header .container{
     border-radius: 20px;
 }
 .btn1:hover{
-    background-color: #61afc2;
+    background-color: #6cd6e1;
 }
 
 .flex-box-absolute{
@@ -156,6 +156,10 @@ header .container{
     font-weight: bolder;
     font-size: 12px;
     color: #6c6c6c;
+}
+
+.demos i{
+    color: #bcafa1;
 }
 
 .price span{

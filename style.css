@@ -48,6 +48,9 @@ header .container{
     flex-direction: column;
     align-items: center;
 }
+.icon-1.fas.fa-home{
+    color:#6cd6e1;
+}
 
 .header-link .icon-1{
     color: #6c6c6c;
@@ -92,6 +95,7 @@ header .container{
     height: 100vh;
     background-image: url("img/avada-spa-slider-image-1-new.jpg");
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -134,7 +138,7 @@ header .container{
 .flex-box-absolute{
     position: absolute;
     height: 120px;
-    top: 5px;
+    top: 15px;
     right: 5px;
     display: flex;
     flex-direction: column;

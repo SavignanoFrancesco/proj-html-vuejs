@@ -95,7 +95,7 @@
                             <img :src="box.src" alt="">
                         </div>
                         <div class="credits" v-if="box.type == 'credits'">
-                            <p><span>&copy;</span>{{box.p}}</p>
+                            <p><span>&copy; </span>{{box.p}}</p>
                         </div>
                         <div class="social" v-if="box.type == 'socials'">
                             <a href="#" v-for="social in box.icons">

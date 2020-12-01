@@ -169,16 +169,19 @@ header .container{
     font-weight: bolder;
     font-size: 12px;
     color: #6c6c6c;
+    opacity: 0.7;
 }
 
 .demos i{
     color: #33475b;
+        opacity: 0.7;
 }
 
 .price span{
     font-size: 18px;
     font-weight:bolder;
     color: #65bc7b;
+    opacity: 1;
 }
 
 /* __________SEZIONE_2__________ */
@@ -200,6 +203,7 @@ header .container{
 }
 .flex-box2 h1{
     color: #6f727b;
+    opacity: 0.7;
     font-size: 50px;
     font-weight: lighter;
 }
@@ -225,6 +229,7 @@ header .container{
 }
 .flex-box2 p{
     color: #6f727b;
+    opacity: 0.7;
     margin-bottom: 25px;
 }
 
@@ -268,6 +273,7 @@ header .container{
 }
 .flex-box3 p{
     color: #6f727b;
+    opacity: 0.7;
     font-size: 14px;
 }
 .flex-box3 .internal2{
@@ -309,6 +315,7 @@ footer{
 .credits p{
     font-size: 10px;
     color: #6f727b;
+    opacity: 0.7;
     text-transform: uppercase;
 }
 
@@ -320,12 +327,13 @@ footer{
 .social a{
     /* border: 1px solid black; */
     border-radius: 5px;
-    padding: 8px;
+    padding: 7px 10px;
     margin-right: 10px;
     background: lightgrey;
+    opacity: 0.5;
 }
 .social a .fa-facebook-f{
-    padding: 4px;
+    padding: 3px;
 }
 .social a .fa-instagram{
     padding: 1px;
@@ -333,4 +341,6 @@ footer{
 
 .social i{
     color: #6f727b;
+    opacity: 1;
+    font-size: 12px;
 }

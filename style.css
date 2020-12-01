@@ -282,3 +282,55 @@ header .container{
     height: 400px;
     background: whitesmoke;
 }
+
+/* __________FOOTER__________ */
+footer{
+    border-top: 3px solid lightgrey;
+}
+
+.footer-boxes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    padding: 20px;
+}
+
+.footer-box{
+    width: calc(100% / 3);
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.credits p{
+    font-size: 10px;
+    color: #6f727b;
+    text-transform: uppercase;
+}
+
+.footer-box:last-of-type{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a{
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+    background: lightgrey;
+}
+.social a .fa-facebook-f{
+    padding: 4px;
+}
+.social a .fa-instagram{
+    padding: 1px;
+}
+
+.social i{
+    color: #6f727b;
+}

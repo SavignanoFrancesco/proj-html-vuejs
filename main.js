@@ -72,6 +72,35 @@ var app = new Vue({
                 p: "Natural Beauty",
             },
         ],
+        footer_boxes: [
+            {
+                type: 'logo',
+                src: 'img/avada-spa-logo-new.png'
+            },
+            {
+                type: 'credits',
+                p: 'copyright 2012 - 2020 | avada theme by themefusion | all rights reserved | powered by wordpress'
+            },
+            {
+                type: 'socials',
+                icons: [
+                    {
+                        icon_class: 'fab fa-facebook-f'
+                    },
+                    {
+                        icon_class: 'fab fa-twitter'
+                    },
+                    {
+                        icon_class: 'fab fa-instagram'
+                    },
+                    {
+                        icon_class: 'fab fa-youtube'
+                    },
+                ]
+            }
+
+
+        ]
     },
     methods: {
         //toggle per definire quale voce della navbar è attiva

@@ -84,8 +84,41 @@
                 </div>
 
             </section>
-            <section class="section-3">
 
+            <!-- __________TERZA_SEZIONE__________ -->
+            <section class="section-3">
+                <div class="container">
+                    <div class="flex-box4">
+
+                        <div class="left">
+                            <img src="img/face_and_body_treatments-new.jpg" alt="">
+                        </div>
+
+                        <div class="right">
+                            <h1>Face & Body Treatments</h1>
+                            <p>Pellentesque nec felis efficitur, saggitis eros et,pharetra risus.Sed at lacus a ex imperdiet dignissim vehicula quam.Vestibulum ante ipsum primis.</p>
+                            <div class="add-treatments">
+                                <div class="treatment" v-for="(box,index) in add_treatments_box">
+                                    <div class="upper-treatment">
+                                        <div v-if="box.active == false" @click="treatmentToggle(index)" class="add">
+                                            {{box.add_icon}}
+                                        </div>
+                                        <div @click="treatmentToggle(index)" v-if="box.active == true" class="remove">
+                                            {{box.remove_icon}}
+                                        </div>
+                                        <h2>{{box.h2}}</h2>
+                                    </div>
+                                    <p v-if="box.active == true">{{box.p}}<span>{{box.span}}</span></p>
+                                </div>
+                            </div>
+
+                            <a href="" class="btn2">
+                                <span>Book an appointment</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </section>
 
             <footer>

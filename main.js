@@ -100,6 +100,32 @@ var app = new Vue({
             }
 
 
+        ],
+        add_treatments_box: [
+            {
+                add_icon: '+',
+                remove_icon: '-',
+                h2: 'Oil Massage',
+                p: '$62 For 2 Hours',
+                span: ' - asdasdasdasd',
+                active: true,
+            },
+            {
+                add_icon: '+',
+                remove_icon: '-',
+                h2: 'Manicure',
+                p: '$62 For 2 Hours',
+                span: ' - asdasdasdasd',
+                active: false,
+            },
+            {
+                add_icon: '+',
+                remove_icon: '-',
+                h2: 'Aromatherapy',
+                p: '$62 For 2 Hours',
+                span: ' - asdasdasdasd',
+                active: false,
+            },
         ]
     },
     methods: {
@@ -112,6 +138,16 @@ var app = new Vue({
 
             // la voce del menu cliccata diventa attiva
             this.header_boxes[index].active = true;
+        },
+        treatmentToggle(index){
+            if (this.add_treatments_box[index].active == false) {
+                this.add_treatments_box[index].active = true;
+            }else{
+                this.add_treatments_box[index].active = false;
+            }
+
+            console.log(this.add_treatments_box[index].active);
+
         }
     },
     mounted(){

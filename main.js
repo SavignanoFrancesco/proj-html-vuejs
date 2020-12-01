@@ -72,6 +72,32 @@ var app = new Vue({
                 p: "Natural Beauty",
             },
         ],
+        add_treatments_box: [
+            {
+                add_icon: '+',
+                remove_icon: '-',
+                h2: 'Oil Massage',
+                p: '$62 For 2 Hours',
+                span: ' - asdasdasdasd',
+                active: true,
+            },
+            {
+                add_icon: '+',
+                remove_icon: '-',
+                h2: 'Manicure',
+                p: '$62 For 2 Hours',
+                span: ' - asdasdasdasd',
+                active: false,
+            },
+            {
+                add_icon: '+',
+                remove_icon: '-',
+                h2: 'Aromatherapy',
+                p: '$62 For 2 Hours',
+                span: ' - asdasdasdasd',
+                active: false,
+            },
+        ],
         footer_boxes: [
             {
                 type: 'logo',
@@ -101,32 +127,6 @@ var app = new Vue({
 
 
         ],
-        add_treatments_box: [
-            {
-                add_icon: '+',
-                remove_icon: '-',
-                h2: 'Oil Massage',
-                p: '$62 For 2 Hours',
-                span: ' - asdasdasdasd',
-                active: true,
-            },
-            {
-                add_icon: '+',
-                remove_icon: '-',
-                h2: 'Manicure',
-                p: '$62 For 2 Hours',
-                span: ' - asdasdasdasd',
-                active: false,
-            },
-            {
-                add_icon: '+',
-                remove_icon: '-',
-                h2: 'Aromatherapy',
-                p: '$62 For 2 Hours',
-                span: ' - asdasdasdasd',
-                active: false,
-            },
-        ]
     },
     methods: {
         //toggle per definire quale voce della navbar è attiva
@@ -139,14 +139,23 @@ var app = new Vue({
             // la voce del menu cliccata diventa attiva
             this.header_boxes[index].active = true;
         },
+        //toggle per definire quale trattamento è stato aggiunto/rimosso
         treatmentToggle(index){
+            //disattiva tutti i treatments tranne quello cliccato
+            for (var i = 0; i < this.add_treatments_box.length; i++) {
+                if (i != index) {
+                    this.add_treatments_box[i].active = false;
+                }
+            }
+
+            //toggle
             if (this.add_treatments_box[index].active == false) {
                 this.add_treatments_box[index].active = true;
             }else{
                 this.add_treatments_box[index].active = false;
             }
 
-            console.log(this.add_treatments_box[index].active);
+            // console.log(this.add_treatments_box[index].active);
 
         }
     },

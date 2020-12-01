@@ -128,10 +128,10 @@
                         <div class="footer-logo" v-if="box.type == 'logo'">
                             <img :src="box.src" alt="">
                         </div>
-                        <div class="credits" v-if="box.type == 'credits'">
+                        <div class="credits" v-else-if="box.type == 'credits'">
                             <p><span>&copy; </span>{{box.p}}</p>
                         </div>
-                        <div class="social" v-if="box.type == 'socials'">
+                        <div class="social" v-else="box.type == 'socials'">
                             <a href="#" v-for="social in box.icons">
                                 <i :class="social.icon_class"></i>
                             </a>

@@ -50,7 +50,7 @@ var app = new Vue({
             },
 
         ],
-        flex_box3: [
+        icons_container: [
             {
                 icon_class: "fas fa-sign-language",
                 p: "Massages",
@@ -192,7 +192,7 @@ var app = new Vue({
             // console.log(this.add_treatments_box[index].active);
 
         },
-        //
+        //ricava le url per le immagini delle cards
         getCardImgUrl(index){
             let img_url = 'card_imgs/Layer-' + (index + 1) + '-new.jpg';
             return img_url;

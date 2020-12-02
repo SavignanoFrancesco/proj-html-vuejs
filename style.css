@@ -99,7 +99,7 @@ header .container{
 }
 
 /* __________SEZIONE_1__________ */
-.section-1{
+.jumbotron{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +111,7 @@ header .container{
     position: relative;
 }
 
-.flex-box1{
+.jumbotron-container{
     width: 80%;
     height: 30%;
     display: flex;
@@ -119,18 +119,18 @@ header .container{
     align-items: center;
     justify-content: space-between;
 }
-.flex-box1 > div{
+.jumbotron-container > div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.section-1 h2{
+.jumbotron h2{
     font-size: 40px;
 }
 
-.section-1 h1{
+.jumbotron h1{
     color: #ffffff;
     font-size: 90px;
 }
@@ -189,7 +189,7 @@ header .container{
 }
 
 /* __________SEZIONE_2__________ */
-.section-2{
+.luxury-spa-experiences{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,40 +201,40 @@ header .container{
 
 }
 
-.flex-box2{
+.text-container{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.flex-box2 h1{
+.text-container h1{
     color: #6f727b;
     /* opacity: 0.7; */
     font-size: 50px;
     font-weight: lighter;
 }
-.flex-box2 h2{
+.text-container h2{
     font-size: 30px;
     font-weight: lighter;
 }
-.flex-box2 .line{
+.text-container .line{
     width: 12%;
     height: 0px;
     border-bottom: 2px solid #bcafa1;
     margin-bottom: 15px;
 }
-.flex-box2 > *{
+.text-container > *{
     padding: 10px 0;
 }
-.flex-box2 i{
+.text-container i{
     font-size: 30px;
     transform: scaleX(-1);
    -moz-transform: scaleX(-1);
    -webkit-transform: scaleX(-1);
    -ms-transform: scaleX(-1);
 }
-.flex-box2 p{
+.text-container p{
     color: #6f727b;
     /* opacity: 0.7; */
     margin-bottom: 25px;
@@ -254,12 +254,12 @@ header .container{
     color: #33a7b9;
 }
 
-.section-2 .btn2{
+.luxury-spa-experiences .btn2{
     font-size: 12px;
     font-weight: bolder;
 }
 
-.flex-box3{
+.icons-container{
     /* border: 1px solid black; */
     width: 70%;
     display: flex;
@@ -268,22 +268,22 @@ header .container{
     height: 100px;
     padding-left: 33px;
 }
-.flex-box3 > *{
+.icons-container > *{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.flex-box3 i{
+.icons-container i{
     font-size: 40px;
     padding: 5px 0;
 }
-.flex-box3 p{
+.icons-container p{
     color: #6f727b;
     /* opacity: 0.7; */
     font-size: 14px;
 }
-.flex-box3 .internal2{
+.icons-container .internal2{
     width: calc(100% / 5);
     position: relative;
     top: 20px;
@@ -291,7 +291,7 @@ header .container{
 }
 
 /* __________SEZIONE_3__________ */
-.section-3{
+.face-and-body-treatments{
     background: whitesmoke;
     display: flex;
     align-items: center;
@@ -299,7 +299,7 @@ header .container{
     padding:50px 0;
 }
 
-.section-3 .container{
+.face-and-body-treatments .container{
     width: 60%;
     display: flex;
     align-items: center;
@@ -307,25 +307,25 @@ header .container{
 
 }
 
-.flex-box4{
+.external-container{
     width: 100%;
     display: flex;
     align-items: center;
     /* border: 1px solid black; */
 }
 
-.flex-box4 .left{
+.external-container .left{
     width: 50%;
     padding: 40px;
     /* border: 1px solid black; */
 }
-.section-3 img{
+.face-and-body-treatments img{
     width: 100%;
     border: 10px solid white;
     box-shadow: 4px 0px 4px -2px rgba(0,0,0,0.29);
 }
 
-.flex-box4 .right{
+.external-container .right{
     /* display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -336,13 +336,13 @@ header .container{
     /* border: 1px solid black; */
 }
 
-.flex-box4 h1{
+.external-container h1{
     color: #6f727b;
     /* opacity: 0.7; */
     font-size: 40px;
     font-weight: lighter;
 }
-.flex-box4 p{
+.external-container p{
     color: #6f727b;
     opacity: 0.9;
     padding: 8px 0;
@@ -354,7 +354,7 @@ header .container{
     /* border: 1px solid black; */
     min-height: 250px;
 }
-.section-3 .btn2{
+.face-and-body-treatments .btn2{
     font-size: 14px;
     padding: 10px 8px;
 }
@@ -394,12 +394,12 @@ header .container{
 }
 
 /* __________QUARTA SEZIONE__________ */
-.section-4{
+.our-treatments{
     display: flex;
     flex-direction: column;
     /* height: 1000px; */
 }
-.section-4 .head-title{
+.our-treatments .head-title{
     height: 20vh;
     width: 100%;
     background-image: url('img/ptb_cta-new.jpg');
@@ -409,7 +409,7 @@ header .container{
     align-items: center;
     justify-content: center;
 }
-.section-4 .head-title h1{
+.our-treatments .head-title h1{
     text-transform: uppercase;
     color: white;
     font-size: 26px;

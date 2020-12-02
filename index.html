@@ -35,9 +35,9 @@
                 </div>
             </header>
 
-            <!-- __________PRIMA_SEZIONE__________ -->
-            <section class="section-1">
-                <div class="flex-box1">
+            <!-- __________JUMBOTRON__________ -->
+            <section class="jumbotron">
+                <div class="jumbotron-container">
                     <div class="">
                         <h2>Give yourself permission</h2>
                         <h1>Relax, Revive & Rejuvenate</h1>
@@ -60,9 +60,9 @@
                 </div>
             </section>
 
-            <!-- __________SECONDA_SEZIONE__________ -->
-            <section class="section-2">
-                <div class="flex-box2">
+            <!-- __________LUXURY_SPA-EXPERIENCES__________ -->
+            <section class="luxury-spa-experiences">
+                <div class="text-container">
                     <h1>Luxury Spa Experiences</h1>
                     <i class="icon-color1 fab fa-envira"></i>
                     <h2>Morbi pharetra, quam id consequat imperdiet, lectus est tincidunt massa, eu posuere leo nibh non fermentum</h2>
@@ -74,9 +74,9 @@
                         <span>Our approach</span>
                     </a>
                 </div>
-                <div class="flex-box3">
+                <div class="icons-container">
 
-                    <div v-for="(item,index) in flex_box3" :class="index % 2 == 0 ? 'internal1' : 'internal2'">
+                    <div v-for="(item,index) in icons_container" :class="index % 2 == 0 ? 'internal1' : 'internal2'">
                         <i class="icon-color1" :class="item.icon_class"></i>
                         <p>{{item.p}}</p>
                     </div>
@@ -85,10 +85,10 @@
 
             </section>
 
-            <!-- __________TERZA_SEZIONE__________ -->
-            <section class="section-3">
+            <!-- __________FACE_AND_BODY_TREATMENTS__________ -->
+            <section class="face-and-body-treatments">
                 <div class="container">
-                    <div class="flex-box4">
+                    <div class="external-container">
 
                         <div class="left">
                             <img src="img/face_and_body_treatments-new.jpg" alt="">
@@ -121,8 +121,8 @@
                 </div>
             </section>
 
-            <!-- __________QUARTA_SEZIONE__________ -->
-            <section class="section-4">
+            <!-- __________OUR_TREATMENTS__________ -->
+            <section class="our-treatments">
                 <div class="head-title">
                     <h1>Our treatments</h1>
                 </div>

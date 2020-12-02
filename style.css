@@ -484,6 +484,35 @@ header .container{
     display: none;
 }
 
+/* _____________QUOTE_SECTION_____________ */
+.quote-section{
+    width: 100%;
+    background-image: url('img/Home-quota-new.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container{
+    width: 40%;
+    height: 40%;
+    padding: 250px 0;
+    color: white;
+    /* font-weight: bolder; */
+    text-align: center;
+    letter-spacing: 2px;
+}
+.quote-container p:last-of-type{
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+.quote-container span{
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 10px 0;
+}
 /* __________FOOTER__________ */
 footer{
     border-top: 3px solid lightgrey;

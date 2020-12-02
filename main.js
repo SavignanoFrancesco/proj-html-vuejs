@@ -127,6 +127,40 @@ var app = new Vue({
 
 
         ],
+        cards: [
+            {
+            h2: 'Hydrotherapy',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+            {
+            h2: 'Massage',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+            {
+            h2: 'Aromatherapy',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+            {
+            h2: 'Heat Therapy',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+            {
+            h2: 'Skin Care',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+            {
+            h2: 'Spa Days',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+            {
+            h2: 'Beauty treatments',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+            {
+            h2: 'Residential',
+            p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
+            },
+        ],
     },
     methods: {
         //toggle per definire quale voce della navbar è attiva
@@ -157,7 +191,12 @@ var app = new Vue({
 
             // console.log(this.add_treatments_box[index].active);
 
-        }
+        },
+        //
+        getCardImgUrl(index){
+            let img_url = 'card_imgs/Layer-' + (index + 1) + '-new.jpg';
+            return img_url;
+        },
     },
     mounted(){
 

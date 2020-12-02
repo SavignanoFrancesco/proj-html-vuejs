@@ -393,6 +393,92 @@ header .container{
     /* display: none; */
 }
 
+/* __________QUARTA SEZIONE__________ */
+.section-4{
+    display: flex;
+    flex-direction: column;
+    /* height: 1000px; */
+}
+.section-4 .head-title{
+    height: 20vh;
+    width: 100%;
+    background-image: url('img/ptb_cta-new.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-4 .head-title h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.cards-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card{
+    width: calc(100% / 4);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(128,128,128,0.2);
+}
+
+.upper-card{
+    width: 100%;
+    height: 75%;
+}
+.card:hover .upper-card.hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover .upper-card.img{
+    display: none;
+
+}
+.bottom-card{
+    width: 100%;
+    height: 25%;
+    background:
+}
+.bottom-card h2{
+    margin: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #d3cac0;
+}
+.bottom-card p{
+    margin: 10px;
+    color: #6b6a69;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upper-card.hover h2{
+    color: white;
+}
+
+.upper-card.hover{
+    background: #d3cac0;
+    display: none;
+}
+
 /* __________FOOTER__________ */
 footer{
     border-top: 3px solid lightgrey;

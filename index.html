@@ -121,6 +121,32 @@
                 </div>
             </section>
 
+            <!-- __________QUARTA_SEZIONE__________ -->
+            <section class="section-4">
+                <div class="head-title">
+                    <h1>Our treatments</h1>
+                </div>
+                <div class="cards-container">
+                    <div class="card" v-for="(card,index) in cards">
+
+                        <div class="upper-card img">
+                            <img :src="getCardImgUrl(index)" alt="">
+                        </div>
+
+                        <div class="upper-card hover">
+                            <h2>{{card.h2}}</h2>
+                        </div>
+
+                        <div class="bottom-card">
+                            <h2>{{card.h2}}</h2>
+
+                            <p>{{card.p}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
             <!-- __________FOOTER__________ -->
             <footer>
                 <div class="footer-boxes">

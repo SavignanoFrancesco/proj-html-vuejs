@@ -6,6 +6,7 @@
 
 body{
     background: whitesmoke;
+    font-family: 'Lato', sans-serif;
 }
 
 a{
@@ -13,9 +14,15 @@ a{
     color: unset;
 }
 
+h1{
+    font-family: 'Libre Baskerville', serif;
+}
+
 h2{
     color: #d3cac0;
     font-style: italic;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* __________HEADER__________ */
@@ -24,8 +31,6 @@ header{
     justify-content: center;
     align-items: center;
     background: whitesmoke;
-    /* border: 1px solid black; */
-    font-family: 'Oswald', sans-serif;
 }
 
 header .container{
@@ -98,7 +103,7 @@ header .container{
 .header-logo h1{
 }
 
-/* __________SEZIONE_1__________ */
+/* __________JUMBOTRON__________ */
 .jumbotron{
     display: flex;
     flex-direction: column;
@@ -127,12 +132,12 @@ header .container{
 }
 
 .jumbotron h2{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .jumbotron h1{
     color: #ffffff;
-    font-size: 90px;
+    font-size: 70px;
 }
 
 .btn1{
@@ -188,7 +193,7 @@ header .container{
     opacity: 1;
 }
 
-/* __________SEZIONE_2__________ */
+/* __________LUXURY_SPA-EXPERIENCES__________ */
 .luxury-spa-experiences{
     display: flex;
     flex-direction: column;
@@ -290,7 +295,7 @@ header .container{
     /* border: 1px solid black; */
 }
 
-/* __________SEZIONE_3__________ */
+/* __________FACE_AND_BODY_TREATMENTS__________ */
 .face-and-body-treatments{
     background: whitesmoke;
     display: flex;
@@ -393,7 +398,7 @@ header .container{
     /* display: none; */
 }
 
-/* __________QUARTA SEZIONE__________ */
+/* __________OUR_TREATMENTS__________ */
 .our-treatments{
     display: flex;
     flex-direction: column;

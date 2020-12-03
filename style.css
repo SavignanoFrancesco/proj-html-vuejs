@@ -363,7 +363,7 @@ header .container{
 .add-treatments{
     margin: 10px 0;
     /* border: 1px solid black; */
-    min-height: 250px;
+    min-height: 210px;
 }
 .face-and-body-treatments .btn2{
     font-size: 14px;
@@ -669,7 +669,7 @@ footer{
     }
 
     .face-and-body-treatments .container{
-        width: 80%;
+        width: 100%;
     }
 
     .card{

@@ -249,13 +249,16 @@ header .container{
 }
 
 .btn2{
+    font-weight: bolder;
     text-transform: uppercase;
     border: 2px solid  #bcafa1;
     color: #bcafa1;
-    font-size: 16px;
     letter-spacing: 1px;
-    padding: 12px 16px;
+    padding: 12px 18px;
     border-radius: 20px;
+}
+.btn2 span{
+        font-size: 12px;
 }
 .btn2:hover{
     border: 2px solid  #33a7b9;
@@ -391,13 +394,18 @@ header .container{
 
 .add{
     background-color: #d3cac0;
-    padding: 3px 8px;
-    cursor: pointer;
-}
-.remove{
-    background-color: lightgrey;
     padding: 3px 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove{
+    background-color: lightgrey;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 16px;
     /* display: none; */
 }
 
@@ -408,7 +416,7 @@ header .container{
     /* height: 1000px; */
 }
 .our-treatments .head-title{
-    height: 20vh;
+    padding: 50px 0;
     width: 100%;
     background-image: url('img/ptb_cta-new.jpg');
     background-size: cover;
@@ -427,6 +435,7 @@ header .container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    border-bottom: 1px solid rgba(128,128,128,0.2);
     /* border: 2px solid black; */
 }
 .cards-container::after{
@@ -437,7 +446,7 @@ header .container{
 
 .card{
     width: calc(100% / 4);
-    height: 70vh;
+    /* height: 70vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,16 +468,20 @@ header .container{
 }
 .bottom-card{
     width: 100%;
-    height: 25%;
+    /* height: 25%; */
     background:
 }
 .bottom-card h2{
-    margin: 10px;
-    padding: 10px 0;
-    border-bottom: 1px solid #d3cac0;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 10px;
+    /* margin: 10px; */
+    padding: 15px 10px;
+    border-bottom: 1px dotted #d3cac0;
 }
 .bottom-card p{
-    margin: 10px;
+    margin: 0 10px;
+    padding: 10px;
     color: #6b6a69;
 }
 
@@ -519,6 +532,7 @@ header .container{
 
 /* _____________SPECIAL_OFFER_SECTION_____________ */
 .special-offer{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -568,6 +582,10 @@ header .container{
 }
 .discount-leftbox span:first-of-type{
     font-size: 30px;
+}
+
+.discount-text > *{
+    padding: 8px;
 }
 
 

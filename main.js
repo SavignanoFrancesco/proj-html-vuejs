@@ -78,7 +78,7 @@ var app = new Vue({
                 remove_icon: '-',
                 h2: 'Oil Massage',
                 p: '$62 For 2 Hours',
-                span: ' - asdasdasdasd',
+                span: ' - Lorem ipsum dolor sit amet',
                 active: true,
             },
             {
@@ -86,7 +86,7 @@ var app = new Vue({
                 remove_icon: '-',
                 h2: 'Manicure',
                 p: '$62 For 2 Hours',
-                span: ' - asdasdasdasd',
+                span: ' - Lorem ipsum dolor sit amet',
                 active: false,
             },
             {
@@ -94,7 +94,7 @@ var app = new Vue({
                 remove_icon: '-',
                 h2: 'Aromatherapy',
                 p: '$62 For 2 Hours',
-                span: ' - asdasdasdasd',
+                span: ' - Lorem ipsum dolor sit amet',
                 active: false,
             },
         ],

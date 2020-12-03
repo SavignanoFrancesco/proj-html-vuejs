@@ -103,7 +103,7 @@
                                 <div class="treatment" v-for="(box,index) in add_treatments_box">
                                     <div class="upper-treatment">
                                         <div v-if="box.active == false" @click="treatmentToggle(index)" class="add">
-                                            {{box.add_icon}}
+                                            <span>{{box.add_icon}}</span>
                                         </div>
                                         <div @click="treatmentToggle(index)" v-if="box.active == true" class="remove">
                                             {{box.remove_icon}}

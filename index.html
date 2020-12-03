@@ -36,7 +36,7 @@
                             <div class="mobile-logo">
                                 <img src="img/avada-spa-logo-new.png" alt="">
                             </div>
-                            <div class="hamburger-icon">
+                            <div @click="hamburgerMenuActive()" class="hamburger-icon">
                                 <i class="fas fa-bars"></i>
                             </div>
                         </div>
@@ -44,6 +44,18 @@
                     </div>
                 </div>
             </header>
+
+            <!-- _____________HAMBURGER_MENU_____________ -->
+            <div v-if="hamburger_menu" class="hamburger-menu">
+
+                <div class="hamburger-menu-box" v-for="(box, index) in header_boxes"  v-if="box.type != 'logo'">
+                    <a href="#" @click="colorActive(index)" class="hamburger-link" v-if="box.type == 'link'">
+                        <i :class="[box.active == true ? 'active' : '', box.icon_class]" class="icon-color1"></i>
+                        <h3 :class="box.active == true ? 'active' : ''" class="">{{box.h3}}</h3>
+                        <p class="">{{box.p}}</p>
+                    </a>
+                </div>
+            </div>
 
             <!-- __________JUMBOTRON__________ -->
             <section class="jumbotron">
@@ -55,7 +67,7 @@
                     <a href="" class="btn1">
                         <span>Explore treatments</span>
                     </a>
-                <div class="flex-box-absolute">
+                <div class="flex-box-absolute" v-if="hamburger_menu == false">
                     <a href="" class="demos">
                         <i class="icon-color1 fas fa-copy"></i>
                         <span>Demos</span>

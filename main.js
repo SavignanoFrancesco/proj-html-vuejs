@@ -161,6 +161,7 @@ var app = new Vue({
             p:  'Vestibulum nec velit ante.Praesent dignissim interdum est, in lacinia elit pretium nec.Aliquam erat volutpat.Fusce laoreet mi leo.',
             },
         ],
+        hamburger_menu: false,
     },
     methods: {
         //toggle per definire quale voce della navbar è attiva
@@ -196,6 +197,15 @@ var app = new Vue({
         getCardImgUrl(index){
             let img_url = 'card_imgs/Layer-' + (index + 1) + '-new.jpg';
             return img_url;
+        },
+        //
+        hamburgerMenuActive(){
+            if (this.hamburger_menu == false) {
+                this.hamburger_menu = true;
+            }else {
+                this.hamburger_menu = false;
+            }
+            console.log(this.hamburger_menu);
         },
     },
     mounted(){

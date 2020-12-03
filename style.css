@@ -26,6 +26,47 @@ h2{
     font-family: 'Libre Baskerville', serif;
 }
 
+/* __________HAMBURGER_MENU__________ */
+.hamburger-menu{
+    position: absolute;
+    /* height: 100vh; */
+    width: 100%;
+    z-index: 10;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hamburger-menu-box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.hamburger-link{
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu-box:first-of-type i.active{
+    color: #33a7b9;
+}
+.hamburger-menu-box:last-of-type i.active{
+    color: #33a7b9;
+}
+
+.hamburger-link h3.active{
+    color: #33a7b9;;
+}
+.hamburger-link > *{
+    padding-right: 5px;
+}
+
+.hamburger-menu-box .hamburger-logo{
+    display: none;
+}
+
 /* __________HEADER__________ */
 header{
     display: flex;

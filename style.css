@@ -7,6 +7,7 @@
 body{
     background: whitesmoke;
     font-family: 'Lato', sans-serif;
+    /* overflow-y: auto; */
 }
 
 a{
@@ -37,7 +38,9 @@ header .container{
     width: 80%;
 }
 
-
+.mobile-header{
+    display: none;
+}
 
 .header-boxes{
     display: flex;
@@ -686,4 +689,177 @@ footer{
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 792px) {
+
+    .mobile-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .mobile-logo img{
+        width: 70%;
+    }
+
+    .hamburger-icon{
+        align-self: center;
+        padding: 10px;
+        color: rgba(128, 128, 128, 0.7);
+    }
+    .hamburger-icon i{
+        font-size: 20px;
+    }
+
+    .jumbotron h1{
+        font-size: 20px;
+    }
+    .jumbotron h2{
+        font-size: 20px;
+    }
+    .jumbotron .container{
+        height: 100%;
+        width: 100%;
+    }
+
+    .header-boxes{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .face-and-body-treatments .btn2 {
+    align-self: center;
+    }
+
+    .header-box{
+        padding: 0;
+        display: none;
+    }
+
+    .header-box .header-logo{
+        padding: 10px 0;
+        display: flex;
+    }
+
+    .header-link{
+        display: none;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .btn1{
+        font-size: 10px;
+
+    }
+
+    .btn2{
+        padding: 7px 15px;
+    }
+    .btn2 span{
+        font-size: 10px;
+    }
+
+    .text-container h1 {
+    font-size: 30px;
+    }
+
+    .text-container h2 {
+    font-size: 20px;
+    }
+
+    .luxury-spa-experiences {
+    border-bottom-left-radius: 0 0;
+    border-bottom-right-radius: 0 0;
+    padding: 0;
+    border-bottom: 2px solid rgba(128,128,128,0.2);
+    }
+
+    .face-and-body-treatments {
+    padding: 0;
+    border-bottom: 2px solid rgba(128,128,128,0.2);
+    }
+
+    .external-container {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('img/face_and_body_treatments-new.jpg');
+    background-position: center;
+    z-index: 0;
+    }
+
+    .external-container::after {
+      content: "";
+      background: white;
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .external-container .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    justify-content: flex-end;
+    text-align: center;
+    z-index: 1;
+    /* position: absolute; */
+    height: 100%;
+    /* border: 1px solid black; */
+    }
+
+    .add-treatments{
+        width: 100%;
+        text-align: left;
+    }
+    .external-container .left{
+    /* width: 60%;
+    padding: 0;
+    z-index: 0;
+    position: relative; */
+    display: none;
+    }
+    .external-container .left img{
+    padding: 0;
+    opacity: 0.3;
+        height: 50%;
+    }
+
+    .special-offer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discount {
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    }
+
+    .footer-boxes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .footer-box {
+    justify-content: center;
+    width: 100%;
+    }
+    .footer-box:last-of-type {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
 }

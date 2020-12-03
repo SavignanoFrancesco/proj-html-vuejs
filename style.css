@@ -777,6 +777,20 @@ footer{
     padding: 0;
     border-bottom: 2px solid rgba(128,128,128,0.2);
     }
+    .luxury-spa-experiences p{
+    font-size: 14px;
+    }
+    .luxury-spa-experiences .icons-container{
+        padding: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    .luxury-spa-experiences .icons-container i{
+    font-size: 20px;
+    }
+    .luxury-spa-experiences .icons-container p{
+    font-size: 12px;
+    }
 
     .face-and-body-treatments {
     padding: 0;
@@ -824,6 +838,12 @@ footer{
         width: 100%;
         text-align: left;
     }
+    .add-treatments h2{
+        font-size: 18px;
+    }
+    .add-treatments p{
+        font-size: 14px;
+    }
     .external-container .left{
     /* width: 60%;
     padding: 0;
@@ -835,6 +855,10 @@ footer{
     padding: 0;
     opacity: 0.3;
         height: 50%;
+    }
+
+    .cards-container p{
+        font-size: 14px;
     }
 
     .special-offer .container{

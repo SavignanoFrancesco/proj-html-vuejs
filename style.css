@@ -117,8 +117,9 @@ header .container{
 }
 
 .jumbotron-container{
-    width: 80%;
-    height: 30%;
+    /* border: 1px solid black; */
+    width: 65%;
+    /* height: 30%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +138,8 @@ header .container{
 
 .jumbotron h1{
     color: #ffffff;
-    font-size: 70px;
+    font-size: 65px;
+    padding: 20px 0;
 }
 
 .btn1{

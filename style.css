@@ -885,5 +885,11 @@ footer{
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    }
 }
+
+@media screen and (max-width: 458px) {
+    .card{
+        width: 100%;
+    }
 }

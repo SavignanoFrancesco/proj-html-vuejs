@@ -83,7 +83,7 @@ header .container{
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #6c6c6c;
-    font-size: 15px;
+    font-size: 13px;
 }
 .header-link h3.active{
     color: #33a7b9;
@@ -543,8 +543,8 @@ header .container{
     padding: 30px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 60%;
+    justify-content: space-around;
+    width: 80%;
     /* border: 1px solid black; */
 }
 
@@ -645,4 +645,43 @@ footer{
     color: #6f727b;
     opacity: 1;
     font-size: 12px;
+}
+
+/* _____________________QUERIES_____________________ */
+@media screen and (max-width: 1024px) {
+    .header-logo, .footer-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-logo img, .footer-logo img{
+        width: 80%;
+
+    }
+
+    header .container{
+        width: 100%;
+    }
+
+    .luxury-spa-experiences .text-container{
+        width: 80%;
+    }
+
+    .face-and-body-treatments .container{
+        width: 80%;
+    }
+
+    .card{
+        width: calc(100% / 2);
+    }
+
+    .quote-container{
+        width: 60%;
+    }
+
+    .special-offer .container{
+        width: 100%;
+    }
+
 }
